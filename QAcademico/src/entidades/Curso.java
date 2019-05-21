@@ -1,8 +1,7 @@
 package entidades;
 
-public class Disciplina
+public class Curso
 {
 	private String nome;
 	private int codigo;
-
 }
