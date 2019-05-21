@@ -1,5 +1,4 @@
 package entidades;
 
-public class Aluno extends Pessoa {
-
-}
+public class Aluno extends Pessoa
+{}
