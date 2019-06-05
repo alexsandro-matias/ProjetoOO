@@ -7,9 +7,9 @@ public class Aluno extends Pessoa
 	Professor professorAvaliador = new Professor();
 	Nota notaAluno;
 	
-	ArrayList<E>
+//	ArrayList<E>
 
-	public Aluno()
-	{
-	}
+//	public Aluno()
+//	{
+//	}
 }
