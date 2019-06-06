@@ -2,50 +2,47 @@ package entidades;
 
 public class Professor extends Pessoa implements Funcionario
 {
-	
-//	public Professor(String nome)
-//	{
-//		super(nome);
-//	}
-
-//	Aluno qualquerAluno = new Aluno();
-
-//	public void lancarNota(Aluno aluno)
-//	{
-//		System.out.println("Aluno: " + qualquerAluno.getNome());
-//		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
-//	}
-
-//	public void lancarNota(Aluno aluno, Disciplina disciplina)
-//	{
-//		System.out.println("Aluno: " + qualquerAluno.getNome());
-//		System.out.println("Disciplina: " + qualquerAluno.getNome());
-//		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
-//	}
-	
-	public String avaliarDiariamenteAluno(Aluno alunoAvaliado, int nota)
+	// public Professor(String nome)
+	// {
+	// super(nome);
+	// }
+	// Aluno qualquerAluno = new Aluno();
+	public void lancarNota(Aluno aluno)
 	{
-		String avaliacaoDiaria ="";
+		System.out.println("Aluno: " + aluno.getNome());
+		System.out.println("Nota : " + aluno.notaAluno.calculaMedia());
+	}
+
+	// public void lancarNota(Aluno aluno, Disciplina disciplina)
+	// {
+	// System.out.println("Aluno: " + qualquerAluno.getNome());
+	// System.out.println("Disciplina: " + qualquerAluno.getNome());
+	// System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
+	// }
+	public String avaliarDiariamenteAluno(String matricula, Avaliacao nota)
+	{
+		System.out.println(matricula);
+		System.out.println(nota);
+		if (nota.equals(Avaliacao.ruim))
+		{
+			
+		}
 		
-		if (nota == 2)
+		else if (nota.equals(Avaliacao.regular))
 		{
-			return avaliacaoDiaria = "Regular";
 		}
-		else if (nota == 1)
+		else if (nota.equals(Avaliacao.bom))
 		{
-			return avaliacaoDiaria = "Ruim";
 		}
-		else if (nota == 3)
+		else if (nota.equals(Avaliacao.otimo))
 		{
-			return avaliacaoDiaria = "Bom";
 		}
-		else if (nota == 4)
+		else
 		{
-			return avaliacaoDiaria = "Ótimo";
+			System.out.println("Avaliação inválida");
 		}
-		return avaliacaoDiaria;
+		return "";
 	}
 
 	Disciplina disciplinaAluno = new Disciplina();
-
 }

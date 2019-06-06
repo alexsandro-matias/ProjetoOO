@@ -1,6 +1,6 @@
 package entidades;
 
-public class Nota
+public class NotaDeProva
 {
 	private double nota1, nota2, media;
 	
