@@ -6,4 +6,6 @@ public class Turma
 {
 	private String nome;
 	private Date semestre;
+	private Professor professor;
+	private Aluno aluno;
 }

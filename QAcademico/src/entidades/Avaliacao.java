@@ -2,14 +2,20 @@ package entidades;
 
 public enum Avaliacao
 {
-	ruim(1), regular(2), bom(3), otimo(4);
+	ruim(1, "Ruim"), regular(2, "Regular"), bom(3, "Bom"), otimo(4, "Ótimo");
 	
 	public int codigoAvaliacao;
+	public String descricao;
 	
-	 Avaliacao(int codigo)
+	Avaliacao()
+	{
+		this(2, "Regular");
+	}
+
+	Avaliacao(int codigo, String algumaDescricao)
 	 {
 		 codigoAvaliacao = codigo;
-		 
+		 descricao = algumaDescricao;
 	 }
 	
 }

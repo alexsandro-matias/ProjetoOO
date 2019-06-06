@@ -13,15 +13,12 @@ public abstract class Pessoa
 
 	public Pessoa()
 	{
-		super();
 	}
-	
-	
+
 	public String getNome()
 	{
 		return nome;
 	}
-
 
 	public void setNome(String nome)
 	{

@@ -8,14 +8,21 @@ public class Professor extends Pessoa implements Funcionario
 //		super(nome);
 //	}
 
-	Aluno qualquerAluno = new Aluno();
+//	Aluno qualquerAluno = new Aluno();
 
-	public void lancarNota(Aluno aluno)
-	{
-		System.out.println("Aluno: " + qualquerAluno.getNome());
-		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
-	}
+//	public void lancarNota(Aluno aluno)
+//	{
+//		System.out.println("Aluno: " + qualquerAluno.getNome());
+//		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
+//	}
 
+//	public void lancarNota(Aluno aluno, Disciplina disciplina)
+//	{
+//		System.out.println("Aluno: " + qualquerAluno.getNome());
+//		System.out.println("Disciplina: " + qualquerAluno.getNome());
+//		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
+//	}
+	
 	public String avaliarDiariamenteAluno(Aluno alunoAvaliado, int nota)
 	{
 		String avaliacaoDiaria ="";
@@ -41,10 +48,4 @@ public class Professor extends Pessoa implements Funcionario
 
 	Disciplina disciplinaAluno = new Disciplina();
 
-	public void lancarNota(Aluno aluno, Disciplina disciplina)
-	{
-		System.out.println("Aluno: " + qualquerAluno.getNome());
-		System.out.println("Disciplina: " + qualquerAluno.getNome());
-		System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
-	}
 }
