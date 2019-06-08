@@ -15,5 +15,7 @@ public class Aluno extends Pessoa
 	{
 		historicoDeNotas = new HashMap<Date, Integer>();
 	}
+	
+	
 
 }
