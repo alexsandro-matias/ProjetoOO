@@ -8,4 +8,7 @@ public class Turma
 	private Date semestre;
 	private Professor professor;
 	private Aluno aluno;
+	
+	
+	
 }
