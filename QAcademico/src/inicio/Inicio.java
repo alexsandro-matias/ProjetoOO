@@ -17,19 +17,19 @@ public class Inicio
 		Aluno alexsandro = new Aluno();
 		alexsandro.setMatricula("20161y6-RC0050");
 		alexsandro.setNome("Alexsandro Matias de Almeida");
-		alexsandro.avaliarDia(0, 3);
 		alexsandro.avaliarDia(1, 3);
 		alexsandro.avaliarDia(2, 3);
 		alexsandro.avaliarDia(3, 3);
 		alexsandro.avaliarDia(4, 3);
+		alexsandro.avaliarDia(5, 3);
 		
 		erivelton.setMatricula("20162y6-RC0040");
 		erivelton.setNome("Erivelton Ribeiro da Silva Alves");
-		erivelton.avaliarDia(0, 3);
 		erivelton.avaliarDia(1, 3);
 		erivelton.avaliarDia(2, 3);
 		erivelton.avaliarDia(3, 3);
 		erivelton.avaliarDia(4, 3);
+		erivelton.avaliarDia(5, 3);
 		
 		Professor paulo = new Professor();
 		paulo.setNome("Paulo Abadie Guedes");

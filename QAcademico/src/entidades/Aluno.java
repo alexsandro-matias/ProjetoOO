@@ -8,13 +8,13 @@ import java.util.Map;
 
 public class Aluno extends Pessoa
 {
-	Date diaLetivo = null;
+//	Date diaLetivo = null;
 	NotaDeProva notaAluno;
+//	
+//	Calendar calendario = Calendar.getInstance();
+//	int dia = calendario.get(Calendar.DAY_OF_MONTH);
 	
-	Calendar calendario = Calendar.getInstance();
-	int dia = calendario.get(Calendar.DAY_OF_MONTH);
-	
-	Map<Integer, Integer> historicoDeAvaliacoes;
+	HashMap<Integer, Integer> historicoDeAvaliacoes;
 	
 //	public Aluno()
 //	{
@@ -27,15 +27,17 @@ public class Aluno extends Pessoa
 	}
 
 	
-	public Map<Integer, Integer> avaliarDia(int dia, int nota) {
+	public HashMap<Integer, Integer> avaliarDia(int dia, int nota) {
 		historicoDeAvaliacoes.put(dia, nota);
 		return historicoDeAvaliacoes;
 	}
 	
 	public void mostrarRelatorio() {
-		for (int i = 0; i < historicoDeAvaliacoes.size(); ++i) {
-			int dia = historicoDeAvaliacoes.hashCode();
-			System.out.println(historicoDeAvaliacoes.get(dia));	
+		for (Map.Entry<Integer, Integer> mostrarRelatorio : historicoDeAvaliacoes.entrySet()) {
+//			int dia = historicoDeAvaliacoes.get(i);
+//			HashMap<Integer, Integer> mostrarRelatorio = historicoDeAvaliacoes.entrySet();
+			 System.out.println( mostrarRelatorio.getKey());
+		     System.out.println(mostrarRelatorio.getValue());	
 		}
 	}
 	
