@@ -34,9 +34,8 @@ public class Aluno extends Pessoa
 	
 	public void mostrarRelatorio() {
 		for (Map.Entry<Integer, Integer> mostrarRelatorio : historicoDeAvaliacoes.entrySet()) {
-//			int dia = historicoDeAvaliacoes.get(i);
-//			HashMap<Integer, Integer> mostrarRelatorio = historicoDeAvaliacoes.entrySet();
-			 System.out.println( mostrarRelatorio.getKey());
+			 System.out.println();
+			 System.out.print(mostrarRelatorio.getKey() + " - ");
 		     System.out.println(mostrarRelatorio.getValue());	
 		}
 	}

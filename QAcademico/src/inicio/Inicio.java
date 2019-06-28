@@ -1,11 +1,10 @@
 package inicio;
 
-import java.util.ArrayList;
 
-import entidades.Aluno;
-import entidades.Avaliacao;
-import entidades.Professor;
-import entidades.Pessoa;
+import java.util.Scanner;
+
+import entidades.*;
+
 
 public class Inicio
 {
@@ -13,6 +12,13 @@ public class Inicio
 	{
 		// Banco de dados
 		
+		Professor paulo = new Professor();
+		paulo.setNome("Paulo Abadie Guedes");
+		paulo.setMatricula("20003y6-PROF001");
+		
+
+
+
 		Aluno erivelton = new Aluno();
 		Aluno alexsandro = new Aluno();
 		alexsandro.setMatricula("20161y6-RC0050");
@@ -30,24 +36,40 @@ public class Inicio
 		erivelton.avaliarDia(3, 3);
 		erivelton.avaliarDia(4, 3);
 		erivelton.avaliarDia(5, 3);
-		
-		Professor paulo = new Professor();
-		paulo.setNome("Paulo Abadie Guedes");
-		paulo.setMatricula("20003y6-PROF001");
-		
-		
-		ArrayList<Aluno> listaAlunos = new ArrayList<>();
-		
-		listaAlunos.add(alexsandro);
-		listaAlunos.add(erivelton);
-		
-		for (int i = 0; i < listaAlunos.size(); ++i) {
-			Pessoa alunosTurma = listaAlunos.get(i);
-			System.out.println(alunosTurma.getNome());
-		}
-		
+					
 		alexsandro.mostrarRelatorio();
 		erivelton.mostrarRelatorio();
 		
+		Scanner entradaTeclado = new Scanner(System.in);
+		
+
+		InterfaceUsuario menuTerminal = new InterfaceUsuario();
+		menuTerminal.menuInicial(paulo);
+		
+		int opcaoMenu = entradaTeclado.nextInt();
+		
+	    do {
+		
+		switch(opcaoMenu) {
+		case 1:
+			paulo.mostrarTurmas();
+			break;
+			
+		case 2:
+			System.out.println("Digite o nome da turma:");
+			String nomeTurma = entradaTeclado.next();
+			Turma nTurma = new Turma(nomeTurma, paulo);
+			paulo.adicionarTurma(nTurma);
+			break;
+			
+		case 3:
+			menuTerminal.menuInicial(paulo);
+			break;
+			
+		default:
+			System.exit(0);
+		
+		}
+		} while (opcaoMenu != 0);
 	}
 }

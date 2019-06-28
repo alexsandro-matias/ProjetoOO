@@ -1,24 +1,18 @@
 package entidades;
 
+import java.util.ArrayList;
+
 public class Professor extends Pessoa implements Funcionario
 {
-	// public Professor(String nome)
-	// {
-	// super(nome);
-	// }
-	// Aluno qualquerAluno = new Aluno();
+	Disciplina disciplinaAluno = new Disciplina();
+	ArrayList<Turma> listaTurmas = new ArrayList<>();
+	
 	public void lancarNota(Aluno aluno)
 	{
 		System.out.println("Aluno: " + aluno.getNome());
 		System.out.println("Nota : " + aluno.notaAluno.calculaMedia());
 	}
 
-	// public void lancarNota(Aluno aluno, Disciplina disciplina)
-	// {
-	// System.out.println("Aluno: " + qualquerAluno.getNome());
-	// System.out.println("Disciplina: " + qualquerAluno.getNome());
-	// System.out.println("Nota : " + qualquerAluno.notaAluno.calculaMedia());
-	// }
 	public String avaliarDiariamenteAluno(String matricula, Avaliacao nota)
 	{
 		System.out.println(matricula);
@@ -44,5 +38,15 @@ public class Professor extends Pessoa implements Funcionario
 		return "";
 	}
 
-	Disciplina disciplinaAluno = new Disciplina();
+	public ArrayList<Turma> adicionarTurma(Turma novaTurma) {
+		listaTurmas.add(novaTurma);
+	 return listaTurmas;
+	}
+	
+	public void mostrarTurmas() {
+		for (int i = 0; i < listaTurmas.size(); ++i) {
+			Turma listTurma = listaTurmas.get(i);
+			System.out.println(listTurma.getNome());
+		}
+	}
 }
