@@ -13,40 +13,26 @@ public class Professor extends Pessoa implements Funcionario
 		System.out.println("Nota : " + aluno.notaAluno.calculaMedia());
 	}
 
-	public String avaliarDiariamenteAluno(String matricula, Avaliacao nota)
-	{
-		System.out.println(matricula);
-		System.out.println(nota);
-		if (nota.equals(Avaliacao.ruim))
-		{
-			
-		}
-		
-		else if (nota.equals(Avaliacao.regular))
-		{
-		}
-		else if (nota.equals(Avaliacao.bom))
-		{
-		}
-		else if (nota.equals(Avaliacao.otimo))
-		{
-		}
-		else
-		{
-			System.out.println("Avaliação inválida");
-		}
-		return "";
-	}
-
 	public ArrayList<Turma> adicionarTurma(Turma novaTurma) {
 		listaTurmas.add(novaTurma);
 	 return listaTurmas;
 	}
 	
+	public ArrayList<Turma> removerTurma(int rTurma){
+		listaTurmas.remove(rTurma);
+	return listaTurmas;
+	}
+	
 	public void mostrarTurmas() {
 		for (int i = 0; i < listaTurmas.size(); ++i) {
 			Turma listTurma = listaTurmas.get(i);
+			System.out.print(i + 1 + " - ");
 			System.out.println(listTurma.getNome());
 		}
+	}
+	
+	public void exibirTurma(int nTurma) {
+		Turma turmaEscolhida = listaTurmas.get(nTurma);
+		turmaEscolhida.mostrarAlunosTurma();
 	}
 }

@@ -37,8 +37,14 @@ public class Inicio
 		erivelton.avaliarDia(4, 3);
 		erivelton.avaliarDia(5, 3);
 					
-		alexsandro.mostrarRelatorio();
-		erivelton.mostrarRelatorio();
+//		alexsandro.mostrarRelatorio();
+//		erivelton.mostrarRelatorio();
+		
+		Turma Turma1 = new Turma("lpoo", paulo);
+		Turma1.matricularAluno(alexsandro);
+		Turma1.matricularAluno(erivelton);
+		
+		paulo.adicionarTurma(Turma1);
 		
 
 		InterfaceUsuario menuTerminal = new InterfaceUsuario();

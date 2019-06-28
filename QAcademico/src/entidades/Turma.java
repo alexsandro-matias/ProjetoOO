@@ -38,6 +38,7 @@ public class Turma
 	public void mostrarAlunosTurma() {
 		for (int i = 0; i < listaAlunos.size(); ++i) {
 			Pessoa alunosTurma = listaAlunos.get(i);
+			System.out.print(i + 1 + " - ");
 			System.out.println(alunosTurma.getNome());
 		}
 	}
