@@ -40,36 +40,9 @@ public class Inicio
 		alexsandro.mostrarRelatorio();
 		erivelton.mostrarRelatorio();
 		
-		Scanner entradaTeclado = new Scanner(System.in);
-		
 
 		InterfaceUsuario menuTerminal = new InterfaceUsuario();
 		menuTerminal.menuInicial(paulo);
 		
-		int opcaoMenu = entradaTeclado.nextInt();
-		
-	    do {
-		
-		switch(opcaoMenu) {
-		case 1:
-			paulo.mostrarTurmas();
-			break;
-			
-		case 2:
-			System.out.println("Digite o nome da turma:");
-			String nomeTurma = entradaTeclado.next();
-			Turma nTurma = new Turma(nomeTurma, paulo);
-			paulo.adicionarTurma(nTurma);
-			break;
-			
-		case 3:
-			menuTerminal.menuInicial(paulo);
-			break;
-			
-		default:
-			System.exit(0);
-		
-		}
-		} while (opcaoMenu != 0);
 	}
 }
