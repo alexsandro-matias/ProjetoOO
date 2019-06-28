@@ -45,8 +45,10 @@ public class Inicio
 		paulo.adicionarTurma(Turma1);
 		
 
-		InterfaceUsuario menuTerminal = new InterfaceUsuario();
-		menuTerminal.menuInicial(paulo);
+//		InterfaceUsuario menuTerminal = new InterfaceUsuario();
+//		menuTerminal.menuInicial(paulo);
+		
+		
 		
 	}
 }
