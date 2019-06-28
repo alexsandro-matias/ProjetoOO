@@ -2,11 +2,11 @@ package armazenamento;
 
 import java.sql.*;
 
-public class BancoDeDados
-{
+//public class BancoDeDados
+//{
 //	 // register the driver 
 //    String sDriverName = "org.sqlite.JDBC";
-//    Class.forName(sDriverName);
+//    Class.forName("sDriverName");
 //
 //    // now we set up a set of fairly basic string variables to use in the body of the code proper
 //    String sTempDb = "hello.db";
@@ -44,5 +44,5 @@ public class BancoDeDados
 //        try { conn.close(); } catch (Exception ignore) {}
 //    }
 //}
-}
+//}
 

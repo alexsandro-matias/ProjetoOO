@@ -1,8 +1,6 @@
 package inicio;
 
 
-import java.util.Scanner;
-
 import entidades.*;
 
 
