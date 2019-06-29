@@ -31,9 +31,8 @@ public class Professor extends Pessoa implements Funcionario
 		}
 	}
 	
-	public boolean exibirTurma(int nTurma) {
+	public void exibirTurma(int nTurma) {
 		Turma turmaEscolhida = listaTurmas.get(nTurma);
 		turmaEscolhida.mostrarAlunosTurma();
-		return true;
 	}
 }
