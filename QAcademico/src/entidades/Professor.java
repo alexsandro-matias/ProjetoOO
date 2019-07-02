@@ -10,7 +10,7 @@ public class Professor extends Pessoa implements Funcionario
 	public void lancarNota(Aluno aluno)
 	{
 		System.out.println("Aluno: " + aluno.getNome());
-		System.out.println("Nota : " + aluno.notaAluno.calculaMedia());
+		System.out.println("Nota : " + aluno.notaAluno.setMedia());
 	}
 
 	public ArrayList<Turma> adicionarTurma(Turma novaTurma) {

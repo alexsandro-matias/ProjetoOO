@@ -4,12 +4,12 @@ public abstract class Pessoa
 {
 	private String nome;
 	private String matricula;
-	// public Pessoa(String nome)
-	// {
-	// super();
-	// this.setNome(nome);
-	// this.setMatricula(matricula);
-	// }
+
+	public Pessoa(String nome)
+	{
+		this.setNome(nome);
+		this.setMatricula(matricula);
+	}
 
 	public Pessoa()
 	{
@@ -34,6 +34,4 @@ public abstract class Pessoa
 	{
 		this.matricula = matricula;
 	}
-	
-	
 }
