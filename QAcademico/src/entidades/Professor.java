@@ -7,7 +7,7 @@ public class Professor extends Pessoa implements Funcionario
 	Disciplina disciplinaAluno = new Disciplina();
 	ArrayList<Turma> listaTurmas = new ArrayList<>();
 
-	public void lancarNota(Aluno aluno)
+	public void lancarMedia(Aluno aluno)
 	{
 		System.out.println("Aluno: " + aluno.getNome());
 		System.out.println("Nota : " + aluno.notaAluno.calculaMedia());

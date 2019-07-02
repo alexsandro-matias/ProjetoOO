@@ -22,18 +22,18 @@ public class Inicio
 		alexsandro.setMatricula("20161y6-RC0050");
 		alexsandro.setNome("Alexsandro Matias de Almeida");
 		alexsandro.avaliarDia(1, 3);
-		alexsandro.avaliarDia(2, 3);
+		alexsandro.avaliarDia(2, 4);
 		alexsandro.avaliarDia(3, 3);
 		alexsandro.avaliarDia(4, 3);
-		alexsandro.avaliarDia(5, 3);
+		alexsandro.avaliarDia(5, 5);
 		
 		erivelton.setMatricula("20162y6-RC0040");
 		erivelton.setNome("Erivelton Ribeiro da Silva Alves");
 		erivelton.avaliarDia(1, 3);
-		erivelton.avaliarDia(2, 3);
+		erivelton.avaliarDia(2, 2);
 		erivelton.avaliarDia(3, 3);
 		erivelton.avaliarDia(4, 3);
-		erivelton.avaliarDia(5, 3);
+		erivelton.avaliarDia(5, 1);
 					
 //		alexsandro.mostrarRelatorio();
 //		erivelton.mostrarRelatorio();
@@ -43,6 +43,12 @@ public class Inicio
 		Turma1.matricularAluno(erivelton);
 		
 		paulo.adicionarTurma(Turma1);
+		Turma1.mostrarAlunosTurma();
+		
+		alexsandro.mostrarRelatorio();
+		System.out.println();
+		erivelton.mostrarRelatorio();
+		
 		
 
 //		InterfaceUsuario menuTerminal = new InterfaceUsuario();
