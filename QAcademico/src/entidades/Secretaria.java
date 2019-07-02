@@ -7,7 +7,6 @@ public class Secretaria extends Pessoa implements Funcionario
 
 	public Secretaria(String nome)
 	{
-		super();
 		
 	}
 	
