@@ -31,7 +31,7 @@ public class Professor extends Pessoa implements Assalariado
 		
 		for (int i = 0; i < listaTurmas.size(); i++)
 		{
-			System.out.println(this.listaTurmas.toString());
+			System.out.println(listaTurmas.get(i).getNome());
 			
 //			Turma listTurma = listaTurmas.get(i);
 //			System.out.print(i + 1 + " - ");
@@ -39,9 +39,9 @@ public class Professor extends Pessoa implements Assalariado
 		}
 	}
 
-	public boolean exibirTurma(int nTurma)
+	public boolean exibirTurma(int Turma)
 	{
-		Turma turmaEscolhida = listaTurmas.get(nTurma);
+		Turma turmaEscolhida = listaTurmas.get(Turma);
 		turmaEscolhida.mostrarAlunosTurma();
 		return true;
 	}
