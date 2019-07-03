@@ -7,8 +7,4 @@ public class AvaliacaoDiaria
 {
 	Date dataAvaliacao = new Date();
 	ArrayList<AvaliacaoDiaria> conjuntoDeAvaliacoesDiarias = new ArrayList<AvaliacaoDiaria>();
-	
-	
-	
-
 }
