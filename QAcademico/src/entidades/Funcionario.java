@@ -1,11 +1,24 @@
 package entidades;
 
-public interface Funcionario
+public class Funcionario extends Pessoa implements Assalariado
 {
-	
-	
-	public static void receberSalario()
+	private double salario;
+
+	@Override public double receberSalario(double salario)
 	{
-		
+		return this.getSalario();
 	}
+
+	public double getSalario()
+	{
+		return salario;
+	}
+
+	public void setSalario(double salario)
+	{
+		this.salario += salario;
+	}
+	
+	
+	
 }

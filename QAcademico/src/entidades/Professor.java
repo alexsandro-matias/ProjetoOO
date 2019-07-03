@@ -2,7 +2,7 @@ package entidades;
 
 import java.util.ArrayList;
 
-public class Professor extends Pessoa implements Funcionario
+public class Professor extends Pessoa implements Assalariado
 {
 	Disciplina disciplinaAluno = new Disciplina();
 	ArrayList<Turma> listaTurmas = new ArrayList<>();
@@ -19,19 +19,23 @@ public class Professor extends Pessoa implements Funcionario
 		return listaTurmas;
 	}
 
-	public ArrayList<Turma> removerTurma(int rTurma)
+	public ArrayList<Turma> removerTurma(int removerTurma)
 	{
-		listaTurmas.remove(rTurma);
+		listaTurmas.remove(removerTurma);
 		return listaTurmas;
 	}
 
 	public void mostrarTurmas()
 	{
+		System.out.println("Turmas: ");
+		
 		for (int i = 0; i < listaTurmas.size(); i++)
 		{
-			Turma listTurma = listaTurmas.get(i);
-			System.out.print(i + 1 + " - ");
-			System.out.println(listTurma.getNome());
+			System.out.println(this.listaTurmas.toString());
+			
+//			Turma listTurma = listaTurmas.get(i);
+//			System.out.print(i + 1 + " - ");
+//			System.out.println(listTurma.getNome());
 		}
 	}
 
@@ -40,5 +44,10 @@ public class Professor extends Pessoa implements Funcionario
 		Turma turmaEscolhida = listaTurmas.get(nTurma);
 		turmaEscolhida.mostrarAlunosTurma();
 		return true;
+	}
+
+	@Override public double receberSalario(double salario)
+	{
+		return 0;
 	}
 }
