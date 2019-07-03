@@ -2,7 +2,7 @@ package entidades;
 
 import java.util.ArrayList;
 
-public class Professor extends Pessoa implements Assalariado
+public class Professor extends Funcionario implements Assalariado
 {
 	Disciplina disciplinaAluno = new Disciplina();
 	ArrayList<Turma> listaTurmas = new ArrayList<>();
@@ -48,6 +48,6 @@ public class Professor extends Pessoa implements Assalariado
 
 	@Override public double receberSalario(double salario)
 	{
-		return 0;
+		return this.getSalario() + salario;
 	}
 }
