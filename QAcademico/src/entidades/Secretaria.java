@@ -11,8 +11,14 @@ public class Secretaria extends Pessoa implements Assalariado
 		// algumFuncionario.
 	}
 
-	@Override public double receberSalario(double salario)
+	 public double receberSalario(double salario)
 	{
+		return 0;
+	}
+
+	@Override
+	public double receberSalario() {
+		// TODO Auto-generated method stub
 		return 0;
 	}
 }
